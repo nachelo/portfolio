@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#625496">
+    <meta name="description" content="Portfolio de Nacho Nieto en donde se encuentran varias experiencias y trabajos">
+    <!--Entrar en opengraph para ver más etiquetas meta-->
+    <link rel="icon" type="image/jpg" href="#"> <!--Para insertar una imagen en la pestaña del buscador -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Portfolio Nacho Nieto</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio de Nacho Nieto</h1>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="https://twitch.tv/naxelo" target="_blank" rel="noreferrer">Twitch</a>
+            <a href="https://www.youtube.com/@naxelus">Youtube</a>
+        </nav>
+    </header>
+    <main>
+        <p>Hola soy Nacho y tengo 2 años de experiencia como programador web, además de tener conocimientos tanto en impresión y modelaje 3D, tengo un canal de youtube donde hago videos de videojuegos e impresión 3D</p>
+        <img id="foto-avatar" src="#" alt="Imagen porque si">
+        <h2 id="experiencia">Experiencia</h2>
+        <ul>
+            <li class="elemento-lista">Indra-1 año y 4 meses (2023-Actualmente)</li>
+            <li class="elemento-lista">Editor de Vídeos-2 años</li>
+            <li class="elemento-lista">Modelaje y diseño 3D-4 años</li>
+        </ul>
+        <h2 id="proyectos">Proyectos realizados</h2>
+        <aside>
+            <header>
+                <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol>
+                <li>HTML</li>
+                <li>JAVA</li>
+                <li>CSS</li>
+                <li>Clipchamp</li>
+                <li>Sketchup</li>
+                <li>Fusion360</li>
+            </ol>
+        </aside>
+        <section>
+            <article>
+                <header>
+                    <h3>Proyecto con HTML</h3>
+                </header>
+                <p>En este proyecto se puede ver como realicé una página web funcional mezclando diferentes tecnologías para atraer la atención del usuario</p>
+                <small>Lenguajes usados: HTML, JAVA y CSS</small>
+            </article>
+            <article>
+                <header>
+                    <h3>Proyecto con Fusion360</h3>
+                </header>
+                <p>En este proyecto podemos ver varias imágenes en las que muestro como he modelado piezas para poder imprimirlas en 3D para diferentes finalidades, explicadas en el pie de la imagen</p>
+                <img src="" alt="Llavero para carritos">
+                <img src="" alt="Sujeta cascos">
+                <img src="" alt="Sujeta pinceles japones">
+                <img src="" alt="Bowl de decoración minimalista">
+                <img src="" alt="Pinzas">
+                <img src="" alt="Sujeta mandos">
+                <small>Plataforma usada: Fusion360</small>
+            </article>
+            <article>
+                <header>
+                    <h3>Proyecto con Climpchamp</h3>
+                </header>
+                <p>En este proyecto podemos ver un vídeo de youtube el cual grabe y edité yo mismo con microsoft Clipchamp</p>
+                    <iframe width="750px" height="500px" aspect-ratio="16/9" src="https://www.youtube.com/embed/AMFgqPrdVD0?si=SeWGuP1e6YbH5usO" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                <small>Plataformas usadas: Clipchamp y OBS</small>
+            </article>
+        </section>
+        <section>
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Que estudios tienes?</summary>
+                <p>Estudié en el instituto IES Luis de Lucena un Grado Superior de Telecomunicaciones y Sistemas Informáticos</p>
+            </details>
+            <details>
+                <summary>¿Que trabajo mha sido el que más experiencia te ha dado?</summary>
+                <p>En mi caso ha sido trabajando en Indra, ahí ha sido donde más experiencia he podido obtener</p>
+            </details>
+        </section>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <div>
+                        <label for="name">Nombre:
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">Email:
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Información Adicional</legend>
+                    <div>
+                        <label for="tel">Teléfono:
+                            <input type="tel" name="tel" id="tel" required pattern="[0-9]{9}">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">¿Por que contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="terms">¿Aceptas los términos?</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+                    <div>
+                        <datalist id="languages">
+                            <option value="Javascript"></option>
+                            <option value="Python"></option>
+                            <option value="C#"></option>
+                        </datalist>
+                        <label for="languages">
+                            ¿Con que lenguaje quieres ayuda?
+                            <input list="languages" name="languages" id="languages">
+                        </label>
+                    </div>
+                </fieldset>
+                <button>Enviar contacto</button>
+            </form>
+        </section>
+        <img style="width: 100%; aspect-ratio: <!--Buscar el aspect ratio de la imagen-->;" loading="lazy" src="/" alt="udwbubu">
+    </main>
+    <footer>
+        Copyright hecho por mi porque si vale?
+        <a href="mailto:naxelospam@gmail.com" target="_blank">Mándame un correo</a>
+        <a href="tel:+34608699053" target="_blank">Llamame</a>
+    </footer>
+</body>
+</html>
