@@ -1,0 +1,19 @@
+html{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    position: relative;
+}
+
+h1{
+    margin: 0;
+}
+
+.cabecera{
+    background-color: #00212b;
+    color: white;
+    margin: 0;
+    position: sticky;
+}
