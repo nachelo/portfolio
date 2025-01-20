@@ -9,7 +9,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #015958;
+    background: #003847;
+    width: 100%;
+    height: auto;
 }
 
 h1, h2, h3, p {
@@ -22,22 +24,28 @@ button, input, a {
 }
 
 .cabecera{
-    background-color: #015958;
+    background-color: #003847;
     width: 100%;
-    border-bottom: 2px solid #023535;
+    border-bottom: 2px solid #00212b;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.navegacion:hover{
+    cursor: pointer;
 }
 
 .navegacion a{
     margin-right: 10px;
-    cursor: pointer;
 }
 
 .navegacion a:hover{
-    color: #023535;
+    color: #007493;
     text-decoration: underline;
 }
