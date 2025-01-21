@@ -10,31 +10,52 @@
     <!--Entrar en opengraph para ver más etiquetas meta-->
     <link rel="icon" type="image/jpg" href="#"> <!--Para insertar una imagen en la pestaña del buscador -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/normalize.cs">
+    <link rel="stylesheet" href="styles/oscuro.css">
     <title>Portfolio Nacho Nieto</title>
 </head>
 <body>
     <header class="cabecera">
         <h1>Portfolio de Nacho Nieto</h1>
             <nav class="navegacion">
-                <a href="#yo">¿Quien soy?</a>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#proyectos">Proyectos</a>
+                <a src="#proyectos">Proyectos</a>
                 <a href="https://twitch.tv/naxelo" target="_blank" rel="noreferrer">Twitch</a>
                 <a href="https://www.youtube.com/@naxelus" target="_blank">Youtube</a>
             </nav>
     </header>
-    <main>
-        <h2 id="yo">¿Quien soy?</h2>
-        <p>Hola soy Nacho y tengo 2 años de experiencia como programador web, además de tener conocimientos tanto en impresión y modelaje 3D, tengo un canal de youtube donde hago videos de videojuegos e impresión 3D</p>
-        <img id="foto-avatar" src="#" alt="Imagen porque si">
-        <h2 id="experiencia">Experiencia</h2>
-        <ul>
-            <li class="elemento-lista">Indra-1 año y 4 meses (2023-Actualmente)</li>
-            <li class="elemento-lista">Editor de Vídeos-2 años</li>
-            <li class="elemento-lista">Modelaje y diseño 3D-4 años</li>
-        </ul>
-        <h2 id="proyectos">Proyectos realizados</h2>
+    <main class="contenido">
+        <h2>¡Pon el ratón encima de la tarjeta que quieras leer!</h2>
+        <div class="carrusel">
+            <div class="tarjeta_1">
+                <h2>¿Quien soy?</h2>
+                <p>Hola soy Nacho y tengo 2 años de experiencia como programador web, además de tener conocimientos tanto en impresión y modelaje 3D, tengo un canal de youtube donde hago videos de videojuegos e impresión 3D</p>
+                <img id="foto-avatar" src="#" alt="Imagen porque si">
+            </div>
+            <div class="tarjeta_2">
+                <h2>Experiencia</h2>
+            <ul>
+                <li class="elemento-lista">Indra-1 año y 4 meses (2023-Actualmente)</li>
+                <li class="elemento-lista">Editor de Vídeos-2 años</li>
+                <li class="elemento-lista">Modelaje y diseño 3D-4 años</li>
+            </ul>
+            </div>
+            <div class="tarjeta_3">
+                <h2>Preguntas frecuentes</h2>
+                <details>
+                    <summary>¿Que estudios tienes?</summary>
+                    <p>Estudié en el instituto IES Luis de Lucena, un Grado Superior de Telecomunicaciones y Sistemas Informáticos</p>
+                </details>
+                <details>
+                    <summary>¿Que trabajo ha sido el que más experiencia te ha dado?</summary>
+                    <p>En mi caso ha sido trabajando en Indra, ahí ha sido donde más experiencia he podido obtener</p>
+                </details>
+                <details>
+                    <summary>¿Por qué dedicarte a la programación?</summary>
+                    <p>Porque es un mundo que me apasiona y me encanta el hecho de estar ahora mismo programando esta página web</p>
+                </details>
+            </div>
+        </div>
+        <div class="proyectos" id="#proyectos">
+            <h2>Proyectos realizados</h2>
         <aside>
             <header>
                 <h3>Mis tecnologías favoritas</h3>
@@ -84,21 +105,7 @@
                 <small>Plataformas usadas: Clipchamp y OBS</small>
             </article>
         </section>
-        <section>
-            <h2>Preguntas frecuentes</h2>
-            <details>
-                <summary>¿Que estudios tienes?</summary>
-                <p>Estudié en el instituto IES Luis de Lucena, un Grado Superior de Telecomunicaciones y Sistemas Informáticos</p>
-            </details>
-            <details>
-                <summary>¿Que trabajo ha sido el que más experiencia te ha dado?</summary>
-                <p>En mi caso ha sido trabajando en Indra, ahí ha sido donde más experiencia he podido obtener</p>
-            </details>
-            <details>
-                <summary>¿Por qué dedicarte a la programación?</summary>
-                <p>Porque es un mundo que me apasiona y me encanta el hecho de estar ahora mismo programando esta página web</p>
-            </details>
-        </section>
+        </div>
         <section>
             <h2>Formulario de contacto</h2>
             <form method="post" action="/">
@@ -159,5 +166,6 @@
         <a href="mailto:naxelospam@gmail.com" target="_blank">Mándame un correo</a>
         <a href="tel:+34608699053" target="_blank">Llamame</a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

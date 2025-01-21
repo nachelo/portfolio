@@ -1,0 +1,90 @@
+body {
+    background-color: #1c1b29; /* Fondo gris oscuro casi negro */
+    color: #f8f9fa; /* Texto blanco puro */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.cabecera {
+    background-color: #202437; /* Azul oscuro tecnológico */
+    color: #f8f9fa; /* Texto blanco */
+    padding: 10px 20px;
+    border-bottom: 2px solid #27293d; /* Línea de separación gris azulado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a {
+    color: #ffb100; /* Amarillo mostaza */
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    color: #ff5700; /* Naranja vibrante */
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    color: #f8f9fa; /* Texto blanco */
+}
+
+p,
+li,
+small {
+    color: #d3d3d3; /* Gris claro para texto secundario */
+}
+
+button {
+    background-color: #ffb100; /* Botones amarillo mostaza */
+    color: #1c1b29; /* Texto oscuro para contraste */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff5700; /* Naranja vibrante */
+    color: #ffffff; /* Texto blanco en hover */
+}
+
+footer {
+    background-color: #202437; /* Igual que la cabecera */
+    color: #d3d3d3; /* Gris claro para el texto del footer */
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #00b8d9; /* Cyan brillante */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4caf50; /* Verde esmeralda */
+    text-decoration: underline;
+}
+
+/* Estilo adicional para separadores o detalles */
+hr {
+    border: 1px solid #27293d; /* Gris azulado oscuro */
+    margin: 20px 0;
+}
+
+/* Destacar detalles importantes */
+.highlight {
+    color: #ff5700; /* Naranja vibrante */
+    font-weight: bold;
+}
+
+/* Imágenes */
+img {
+    border: 2px solid #27293d; /* Borde sutil para destacar imágenes */
+    border-radius: 5px;
+}
