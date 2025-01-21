@@ -16,15 +16,19 @@ body {
 }
 
 .navegacion a {
-    color: #ffb100; /* Amarillo mostaza */
+    color: #94C9FF; /* Amarillo mostaza */
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
 }
 
 .navegacion a:hover {
-    color: #ff5700; /* Naranja vibrante */
+    color: #76A5FF; /* Naranja vibrante */
     text-decoration: underline;
+}
+
+.navegacion a:active{
+    color: #D1E9FF;
 }
 
 h1,
