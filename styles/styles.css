@@ -328,6 +328,7 @@ h2 {
     height: 250px;
     border-radius: 10px;
     padding: 10px;
+    justify-content-content: center;
 }
 
 
@@ -365,6 +366,7 @@ h2 {
 .indra p:hover + .detalles{
     opacity: 1;
     visibility: visible;
+    text-align: center;
 }
 
 .basf{
