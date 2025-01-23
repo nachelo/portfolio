@@ -86,6 +86,10 @@ h2 {
     margin: 35px 0;
 }
 
+@media (max-width: < 780px ) {
+    
+}
+
 .tarjeta_1,
 .tarjeta_2,
 .tarjeta_3 {
