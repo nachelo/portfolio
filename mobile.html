@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" href="styles/oscuro.css">
     <title>Portfolio Nacho Nieto</title>
+    <script>
+        const screenWidth = window.innerWidth;
+        const currentPage = window.location.pathname;
+    
+        if (screenWidth <= 768 && !currentPage.endsWith("mobile.html")) {
+            window.location.href = "mobile.html";
+        } else if (screenWidth > 768 && !currentPage.endsWith("index.html")) {
+            window.location.href = "index.html";
+        }
+    </script>    
 </head>
 <body>
     <header class="cabecera">
@@ -21,21 +31,5 @@
             <a href="https://www.youtube.com/@naxelus" target="_blank">Youtube</a>
         </nav>
     </header>
-    <script>
-        // Detectar tamaño de pantalla para redirigir
-        const screenWidth = window.innerWidth;
-    
-        // Verificar la URL actual
-        const currentPage = window.location.pathname;
-    
-        // Redirigir según el tamaño
-        if (screenWidth <= 768 && !currentPage.endsWith("mobile.html")) {
-            // Si la pantalla es pequeña y no estamos en mobile.html
-            window.location.href = "mobile.html";
-        } else if (screenWidth > 768 && !currentPage.endsWith("index.html")) {
-            // Si la pantalla es grande y no estamos en index.html
-            window.location.href = "index.html";
-        }
-    </script>
 </body>
 </html>

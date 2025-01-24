@@ -86,17 +86,6 @@ h2 {
     margin: 35px 0;
 }
 
-@media (max-width: 768px) {
-    .carrusel {
-    width: 100px;
-    }
-
-    .tarjeta_1, .tarjeta_2, .tarjeta_3 {
-    width: 100px;
-    animation-play-state: paused;
-    }
-}
-
 .tarjeta_1,
 .tarjeta_2,
 .tarjeta_3 {
