@@ -93,6 +93,7 @@ h2 {
 
     .tarjeta_1, .tarjeta_2, .tarjeta_3 {
     width: 100px;
+    animation-play-state: paused;
     }
 }
 
