@@ -37,3 +37,12 @@ ul {
 
 /*Decoracion*/
 
+.cabecera{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera a{
+    font-size: 0.8em;
+}
