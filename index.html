@@ -22,8 +22,13 @@
         } else if (screenWidth > 768 && !currentPage.endsWith("index.html")) {
             window.location.href = "index.html";
         }
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile && !window.location.pathname.endsWith("mobile.html")) {
+            window.location.href = "mobile.html";
+        } else if (!isMobile && !window.location.pathname.endsWith("index.html")) {
+            window.location.href = "index.html";
+        }
     </script>
-    
 </head>
 <body>
     <header class="cabecera">
