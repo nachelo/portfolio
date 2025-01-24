@@ -88,14 +88,11 @@ h2 {
 
 @media (max-width: 768px) {
     .carrusel {
-        flex-direction: column; /* Cambiar a apilado */
-        align-items: center;
+    width: 100px;
     }
 
     .tarjeta_1, .tarjeta_2, .tarjeta_3 {
-        flex: 1 1 100%; /* Ocupa todo el ancho */
-        max-width: none; /* Sin límite de ancho */
-        margin-bottom: 20px; /* Espacio entre tarjetas */
+    width: 100px;
     }
 }
 
