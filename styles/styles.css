@@ -86,8 +86,17 @@ h2 {
     margin: 35px 0;
 }
 
-@media (max-width: < 780px ) {
-    
+@media (max-width: 768px) {
+    .carrusel {
+        flex-direction: column; /* Cambiar a apilado */
+        align-items: center;
+    }
+
+    .tarjeta_1, .tarjeta_2, .tarjeta_3 {
+        flex: 1 1 100%; /* Ocupa todo el ancho */
+        max-width: none; /* Sin límite de ancho */
+        margin-bottom: 20px; /* Espacio entre tarjetas */
+    }
 }
 
 .tarjeta_1,
