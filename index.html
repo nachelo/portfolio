@@ -15,37 +15,25 @@
     <script>
         function detectDeviceAndRedirect() {
             const screenWidth = window.innerWidth;
-            const currentPage = window.location.pathname;
-            const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone|Opera Mini|IEMobile/i.test(navigator.userAgent);
-            if ((screenWidth <= 768 || isMobile) && !currentPage.endsWith("mobile.html")) {
+            const currentPage = window.location.pathname.split('/').pop(); // Solo el archivo actual
+            const isMobile = screenWidth <= 768; // Considera 768px como móvil
+            // Detectar si cambiar a mobile.html o index.html
+            if (isMobile && currentPage !== "mobile.html") {
                 window.location.href = "mobile.html";
-            }
-            else if ((screenWidth > 768 && !isMobile) && !currentPage.endsWith("index.html")) {
+            } else if (!isMobile && currentPage !== "index.html") {
                 window.location.href = "index.html";
             }
         }
+        // Detectar el cambio de tamaño de pantalla
         let resizeTimeout;
         window.addEventListener("resize", () => {
             clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
-            detectDeviceAndRedirect();
-        }, 200);
+            resizeTimeout = setTimeout(() => {
+                detectDeviceAndRedirect();
+            }, 200);
         });
-        function detectDeviceAndRedirect() {
-        const screenWidth = window.innerWidth;
-        const currentPage = window.location.pathname;
-
-        const isMobile = screenWidth <= 768;
-        const lastDevice = localStorage.getItem("device"); // Obtener el estado guardado
-
-        if (isMobile && lastDevice !== "mobile") {
-            localStorage.setItem("device", "mobile"); // Guardar estado móvil
-            window.location.href = "mobile.html";
-        } else if (!isMobile && lastDevice !== "desktop") {
-            localStorage.setItem("device", "desktop"); // Guardar estado escritorio
-            window.location.href = "index.html";
-        }
-        }
+        // Detectar al cargar la página
+        detectDeviceAndRedirect();
     </script>
 </head>
 <body>
