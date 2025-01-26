@@ -78,7 +78,7 @@ h2 {
 /*Codigo del carrusel*/
 
 .carrusel {
-    width: 1100px;
+    width: 768px;
     height: 500px;
     display: grid;
     justify-content: center;
@@ -92,7 +92,7 @@ h2 {
     background-color: #4c5683;
     border: 2px solid black;
     border-radius: 25px;
-    width: 850px;
+    width: 768px;
     height: 500px;
     grid-row: 1 / 2;
     grid-column: 1/2;
@@ -242,7 +242,7 @@ h2 {
     top: 50px;
     left: 50%;
     transform: translate(-50%);
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -328,7 +328,7 @@ h2 {
     height: 250px;
     border-radius: 10px;
     padding: 10px;
-    justify-content-content: center;
+    justify-content: center;
 }
 
 
