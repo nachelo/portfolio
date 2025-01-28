@@ -4,7 +4,8 @@
     --fondo_boton :#4a63b4;
     --fondo_boton_hover: #697dd7;
     --enlaces: #94C9FF;
-    --enlaces_hover: #76A5FF ;
+    --enlaces_hover: #76A5FF;
+    --bordes: #3c446d;
 }
 
 body {
@@ -98,6 +99,6 @@ hr {
 
 /* Imágenes */
 img {
-    border: 2px solid #27293d;
+    border: 2px solid var(--bordes);
     border-radius: 5px;
 }
