@@ -5,7 +5,7 @@
     --fondo_boton_hover: #697dd7;
     --enlaces: #94C9FF;
     --enlaces_hover: #76A5FF;
-    --bordes: #3c446d;
+    --bordes: #36344f;
 }
 
 body {
@@ -100,5 +100,5 @@ hr {
 /* Imágenes */
 img {
     border: 2px solid var(--bordes);
-    border-radius: 5px;
+    border-radius: 10px;
 }
