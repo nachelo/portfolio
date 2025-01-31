@@ -630,6 +630,7 @@ h2 {
 .modelos div{
     display: flex;
     justify-content: space-between;
+    margin: 10px 0;
 }
 
 .modelos div img{
