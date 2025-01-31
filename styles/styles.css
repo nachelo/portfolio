@@ -597,3 +597,52 @@ h2 {
 .proyecto_fusion{
     grid-column: 2 / 3;
 }
+
+.modelos{
+    border: 2px solid var(--bordes);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    max-height: 270px;
+    overflow: auto;
+}
+
+.modelos::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.modelos::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 8px;
+}
+
+.modelos::-webkit-scrollbar-thumb {
+    background-color: #4c5683;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.modelos::-webkit-scrollbar-thumb:hover {
+    background-color: #1c1b29;
+}
+
+.modelos::-webkit-scrollbar-horizontal {
+    height: 6px;
+}
+
+.modelos div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modelos div img{
+    width: 150px;
+    height: 150px;
+    border-color: #2c2b39;
+}
+
+.modelos div p{
+    align-self: center;
+    border-bottom: 2px solid #2c2b39;
+}
