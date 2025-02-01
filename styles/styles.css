@@ -635,7 +635,7 @@ h2 {
 
 .modelos div img{
     width: 150px;
-    height: 150px;
+    height: auto;
     border-color: #2c2b39;
 }
 
