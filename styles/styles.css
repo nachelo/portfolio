@@ -128,7 +128,7 @@ h2 {
 
 .tarjeta_1 {
     transform: translateX(0);
-    animation: cicloCompleto 15s ease-in-out infinite 3s;
+    animation: cicloCompleto 15s ease-in-out infinite 1.5s;
     z-index: 3;
 }
 .tarjeta_1:hover {
@@ -137,7 +137,7 @@ h2 {
 .tarjeta_2 {
     transform: translate(20%);
     scale: 0.9;
-    animation: cicloCompleto2 15s ease-in-out infinite 3s;
+    animation: cicloCompleto2 15s ease-in-out infinite 1.5s;
 }
 .tarjeta_2:hover {
     animation-play-state: paused;
@@ -145,7 +145,7 @@ h2 {
 .tarjeta_3 {
     transform: translate(-20%);
     scale: 0.9;
-    animation: cicloCompleto3 15s ease-in-out infinite 3s;
+    animation: cicloCompleto3 15s ease-in-out infinite 1.5s;
     z-index: 1;
 }
 .tarjeta_3:hover {
