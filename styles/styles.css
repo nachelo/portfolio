@@ -81,7 +81,7 @@ ul {
     grid-template-areas:
     "titulo titulo" 
     "carrusel carrusel"
-    "proyecto formulario"
+    "proyecto proyecto"
     ;
 }
 
@@ -605,7 +605,7 @@ h2 {
     border-radius: 10px;
     margin: 15px;
     padding: 10px;
-    max-height: 270px;
+    max-height: 300px;
     overflow: auto;
 }
 
@@ -635,7 +635,6 @@ h2 {
 
 .modelos div{
     display: flex;
-    justify-content: space-between;
     margin: 10px 0;
 }
 
@@ -643,6 +642,7 @@ h2 {
     width: 150px;
     height: auto;
     border-color: #2c2b39;
+    margin-right: 50px;
 }
 
 .modelos div p{
@@ -651,8 +651,11 @@ h2 {
 }
 
 .proyecto_fusion footer{
+    display: flex;
+    justify-content: space-between;
     border-radius: 10px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 /*Código del Formulario*/
@@ -684,6 +687,26 @@ h2 {
 .redes_sociales{
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.iconos a{
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.4s, color 0.4s; 
+}
+
+.iconos a:hover{
+    transform: scale(1.3);
 }
