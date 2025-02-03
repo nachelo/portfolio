@@ -45,6 +45,8 @@ ul {
 }
 
 /*Decoración*/
+
+/*Código de la Cabecera*/
 .cabecera {
     width: 100%;
     height: 100px;
@@ -539,6 +541,8 @@ h2 {
     border-radius: 6px;
 }
 
+/*Código de los proyectos*/
+
 .proyectos{
     grid-area: proyecto;
     margin: 20px;
@@ -592,6 +596,8 @@ h2 {
 
 .proyecto_fusion{
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .modelos{
@@ -642,4 +648,42 @@ h2 {
 .modelos div p{
     align-self: center;
     border-bottom: 2px solid #2c2b39;
+}
+
+.proyecto_fusion footer{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/*Código del Formulario*/
+
+
+
+/*Código del Footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.footer a{
+    padding: 5px 10px;
+    text-decoration: none;
+    max-width: max-content;
+    text-align: center;
+}
+
+.footer_contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.redes_sociales{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
 }
