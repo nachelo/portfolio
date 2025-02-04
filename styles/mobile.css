@@ -20,6 +20,7 @@ body {
     width: 100%;
     height: auto;
     text-align: center;
+    overflow-x: hidden;
 }
 
 main{
