@@ -1,3 +1,11 @@
+:root{
+    --morado_oscuro: #4c5683;
+    --morado_normal: #626fa9;
+    --morado_muyoscuro: #3c446d;
+
+    --bordes: #36344f;
+}
+
 /*Código para no tener estilos predeterminados*/
 
 * {
@@ -41,6 +49,8 @@ ul {
 
 /*Decoracion*/
 
+/*Código de la cabecera*/
+
 .cabecera{
     width: 100%;
     display: flex;
@@ -52,14 +62,187 @@ ul {
     font-size: 0.8em;
 }
 
+/*Código del contenido*/
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Código de apartado de construcción*/
+
 .construccion{
     background-color: #fbbf24;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .construccion p{
     color: black;
 }
+
+/*Código de las tarjetas*/
+
+.tarjetas{
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.tarjeta_1, .tarjeta_2, .tarjeta_3{
+    background-color: var(--morado_oscuro);
+    border: 2px solid var(--bordes);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 15px;
+    grid-row: 1 / 2;
+    grid-column: 1/2;
+    z-index: 2;
+    margin: 10px 0;
+}
+
+.tarjetas img{
+    width: 100%;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+}
+
+.tarjeta_1 p{
+    background-color: var(--morado_normal);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    color: azure;
+}
+
+.tarjeta_2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 1fr;
+    gap: 5px;
+}
+
+.tarjeta_2 h2{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.profesional{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.personal{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.indra{
+    position: relative;
+}
+
+.indra h4:hover + .detalles{
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+}
+
+.indra h5{
+    font-size: 1.2em;
+    color: azure;
+}
+
+.indra p{
+    color: azure;
+    text-decoration: underline;
+}
+
+.basf{
+    position: relative;
+}
+
+.basf h4:hover + .detalles{
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+}
+
+.basf h5{
+    font-size: 1.2em;
+    color: azure;
+}
+
+.basf p{
+    color: azure;
+    text-decoration: underline;
+}
+
+.fusion360{
+    position: relative;
+}
+
+.fusion360 h4:hover + .detalles{
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    right: 75px;
+}
+
+.fusion360 h5{
+    font-size: 1.2em;
+    color: azure;
+}
+
+.fusion360 p{
+    color: azure;
+    text-decoration: underline;
+}
+
+.clipchamp{
+    position: relative;
+}
+
+.clipchamp h4:hover + .detalles{
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    right: 75px;
+}
+
+.clipchamp h5{
+    font-size: 1.2em;
+    color: azure;
+}
+
+.clipchamp p{
+    color: azure;
+    text-decoration: underline;
+}
+
+.detalles{
+    opacity: 0;
+    visibility: hidden;
+    background: linear-gradient(180deg, #4a4f77, #2e344f);
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    width: 250px;
+    height: 175px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+/*Código del footer*/
 
 .footer{
     display:flex;

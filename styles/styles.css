@@ -49,7 +49,7 @@ ul {
 /*Código de la Cabecera*/
 .cabecera {
     width: 100%;
-    height: 100px;
+    height: 70px;
     border-bottom: 2px solid;
     display: flex;
     justify-content: space-between;
@@ -367,7 +367,6 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 2px;
-    
 }
 
 .detalles li{
