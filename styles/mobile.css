@@ -71,18 +71,6 @@ ul {
     align-items: center;
 }
 
-/*Código de apartado de construcción*/
-
-.construccion{
-    background-color: #fbbf24;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.construccion p{
-    color: black;
-}
-
 /*Código de las tarjetas*/
 
 .tarjetas{
@@ -101,7 +89,6 @@ ul {
     padding: 15px;
     grid-row: 1 / 2;
     grid-column: 1/2;
-    z-index: 2;
     margin: 10px 0;
 }
 
@@ -235,12 +222,34 @@ ul {
     background: linear-gradient(180deg, #4a4f77, #2e344f);
     position: absolute;
     top: 100%;
-    z-index: 10;
     width: 250px;
     height: 175px;
     border-radius: 10px;
     padding: 10px;
     justify-content: center;
+    z-index: 5;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.proyectos p{
+    color: rgb(232, 241, 241);
+}
+
+.proyectos h3{
+    padding: 5px 0;
+}
+
+.proyecto_html{
+    padding: 10px;
+}
+
+.proyecto_fusion360{
+    padding: 10px;
 }
 
 /*Código del footer*/
