@@ -657,6 +657,10 @@ h2 {
     width: 100%;
 }
 
+.proyecto_fusion footer a:last-child:hover{
+    color: #eb6f40;
+}
+
 /*Código del Formulario*/
 
 
